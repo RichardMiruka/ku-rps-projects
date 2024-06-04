@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Check</title>
+</head>
+
+<body>
+    <script>
+        // Get user input using prompt
+        var userInput = prompt("Enter an integer:", "");
+
+        // Convert input to a number (handle potential errors)
+        var number = parseInt(userInput, 10);
+        if (isNaN(number)) {
+            document.write("Invalid input. Please enter a number.");
+        } else {
+            // Check the number and display message
+            if (number < 10) {
+                document.write("You entered a number less than 10.");
+            } else {
+                document.write("You entered a number 10 or greater.");
+            }
+        }
+    </script>
+</body>
+
+</html>
