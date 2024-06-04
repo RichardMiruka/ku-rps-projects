@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greeting</title>
+</head>
+
+<body>
+    <script>
+        // Get the current date and time
+        var now = new Date();
+
+        // Extract the hour (0-23)
+        var hour = now.getHours();
+
+        // Display greeting based on time of day
+        var greeting;
+        if (hour < 12) {
+            greeting = "Good morning.";
+        } else if (hour < 17) {
+            greeting = "Good afternoon.";
+        } else {
+            greeting = "Good evening.";
+        }
+
+        document.write(greeting);
+    </script>
+</body>
+
+</html>
