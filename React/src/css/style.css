@@ -1,0 +1,99 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: lightgray;
+}
+
+code {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.App {
+    background-color: blueviolet;
+    max-width: fit-content;
+    margin: auto;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+    background-color: orange;
+    padding: 10px 20px;
+}
+
+.nav-menu li {
+    display: inline-block;
+    list-style: none;
+}
+
+.nav-menu_link {
+    display: inline-block;
+    margin: 5px;
+    border: 1px solid grey;
+    text-decoration: overline;
+    border-radius: 5px;
+    padding: 3px 8px;
+    background-color: beige;
+}
+
+.nav-menu_link:hover {
+    border: 1px solid black;
+    background-color: blue;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.logo-link {
+    color: #fff;
+    text-decoration: none;
+}
+
+.main-content {
+    width: 90%;
+    margin: auto;
+    padding-bottom: 300px;
+}
+
+.main-content h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.home-image {
+    width: 100%;
+    height: 100vh;
+    /* Updated to cover the full viewport height */
+    background-image: url("/home/richardmiruka/ku-rps-projects/React/public/GKZvNIJXcAAfqQs.jpeg");
+    background-size: cover;
+    background-position: center;
+    /* Added to center the image */
+    margin-bottom: 50px;
+}
+
+.thumbnail-container {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.home-thumbnail-1,
+.home-thumbnail-2,
+.home-thumbnail-3 {
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+}
+
+.home-thumbnail-1 {
+    background-image: url("public/photo_2024-05-15_20-55-33.jpg");
+}
+
+.home-thumbnail-2 {
+    background-image: url("public/photo_2024-05-15_20-55-42.jpg");
+}
+
+.home-thumbnail-3 {
+    background-image: url("public/photo_2024-05-15_20-55-54.jpg");
+}
